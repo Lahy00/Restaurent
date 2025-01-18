@@ -1,7 +1,12 @@
+import Headers from "./components/Headers";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <span>subscribe Zainkeepscode</span>
+    <div>
+      <Headers/>
+      <Sidebar/>
+    </div>
   );
 }
 
