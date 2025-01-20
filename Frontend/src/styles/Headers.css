@@ -1,3 +1,327 @@
-.navbar{
-    z-index: 1;
+.header{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+}
+.center-absolute{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.app-name{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+.app-name h3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+.slide-menu{
+    position: absolute;
+    height: 100%;
+    width: 5%;
+    left: 15%;
+}
+.slide-menu i{
+    position: absolute;
+    font-size: 23px;
+    cursor: pointer;
+}
+.slide-menu i:hover{
+    font-size: 24px;
+}
+.search-input{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    left: 25%;
+    overflow-x: hidden;
+}
+.search-input input{
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transition: right 1s ease;
+    transform: translateY(-50%);
+}
+.form-control.slide-search{
+    right: -100%;
+    transition: right 1s ease;
+}
+.icon-content{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: 0;
+}
+.icon-content .row{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.icon-content .row .col{
+    position: relative;
+}
+.icon-content .row .col i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    cursor: pointer;
+}
+.icon-content .row .col i:hover{
+    font-size: 26px;
+}
+.user-container span{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 0;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.user-container span i{
+    color: white;
+}
+.user-container .dropdown{
+    position: absolute;
+    z-index: 10000;
+    right: 0;
+}
+.user-container .dropdown button{
+    position: absolute;
+    text-align: right;
+    right: 0;
+    height: 60px;
+    padding-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.user-container .dropdown .dropdown-menu{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+}
+.user-container .username{
+    pointer-events: none;
+}
+.user-container .dropdown .dropdown-item{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.user-container .dropdown .dropdown-item i{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.form_notif{
+    z-index: 9000;
+    margin-top: 40px;
+}
+#notification{
+    margin-right: 5%;
+    display: none;
+}
+#message{
+    margin-right: 10%;
+    display: none;
+}
+.entete_notif{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+.entete_notif strong{
+    font-family: sans-serif;
+}
+.form_notif .toast{
+    background-color: white;
+    width: 450px;
+    height: auto;
+    max-height: 16.3cm;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.toast-body .list-group .list-ajout{
+    position: relative;
+    border-radius: 5px;
+    height: 45px;
+    width: 102%;
+    left: -3px;
+    top: -15px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+.toast-body .list-group .list-ajout:hover{
+    background-color: whitesmoke;
+}
+.toast-body .list-group li .text-notif{
+    position: absolute;
+    width: 90%;
+    overflow-x: hidden;
+}
+.toast-body .list-group-item .btn-action-notif:hover{
+    transform: scale(1.1);
+}
+.type-notif span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 2px;
+    padding-top: 2px;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 1px 1px 2px black;
+}
+.type-notif i:hover{
+    transform: scale(1.1);
+}
+.text-notif{
+    position: absolute;
+    font-family: sans-serif;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 11%;
+}
+.pied_notif a{
+    position: relative;
+    text-decoration: none;
+    left: 12px;
+}
+.toast-body .list-group-item .btn-action-notif{
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;   
+    cursor: pointer;
+    top: 0;
+    right: -15px;
+}
+.icon-action-notif{
+    position: absolute;
+    right: 25px;
+    top: 11px;
+    font-size: 18px;
+    display: flex;
+    gap: 12px;
+}
+.icon-action-notif i{
+    cursor: pointer;
+}
+.icon-action-notif i:hover{
+    transform: scale(1.1);
+}
+.form_notif .toast-body .dropdown{
+    z-index: 10000000;
+}
+.form_notif .toast-body .dropdown .dropdown-menu{
+    position: fixed;
+    top: 15px !important;
+    right: 10px !important;
+    height: 50px;
+}
+.form_notif .dropdown-menu .list-group{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+}
+.form_notif .dropdown-menu .list-group li{
+    position: relative;
+    height: 50%;
+    width: 98%;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    left: 1px;
+    border: none;
+    padding-top: 2px;
+    cursor: pointer;
+}  
+.form_notif .dropdown-menu .list-group li i{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.form_notif .dropdown-menu .list-group li:hover{
+    background-color: whitesmoke;
+} 
+.form_notif.show-notif{
+    display: block;
+}
+/* MESSAGE */
+.type-notif i{
+    position: absolute;
+    font-size: 20px;
+    top: 8px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.message-titre{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+}
+.message-titre .source-message{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.message-titre .text-contenu-message{
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: flex;
+    width:50px;
+    max-width: 50px;
+    flex-wrap: wrap;
+}
+@media (max-width:800px) {
+    .menu li span{
+        visibility: hidden;
+    }
+    .sidebar-content .name-resto{
+        visibility: hidden;
+    }
+    .menu li i{
+        font-size: 24px !important;
+    }
+}
+@media (max-width:570px){
+    .form_notif{
+        display: none;
+    }
 }
