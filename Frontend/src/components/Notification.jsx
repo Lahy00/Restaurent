@@ -26,7 +26,7 @@ function Notification() {
         </div>
         <div className="toast-body">
           <ul className="list-group">
-            <li className="list-group-item list-ajout">
+            <li className="list-group-item list-toast list-ajout">
               <div className="type-notif">
                 <span className="rounded-circle mb-1 bg-primary text-light">
                   A
@@ -69,7 +69,7 @@ function Notification() {
               </div>
             </li>
 
-            <li className="list-group-item list-ajout">
+            <li className="list-group-item list-toast list-ajout">
               <div className="type-notif">
                 <span className="rounded-circle mb-1 bg-primary text-light">
                   A
