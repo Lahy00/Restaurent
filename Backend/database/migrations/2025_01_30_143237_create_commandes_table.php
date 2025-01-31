@@ -14,11 +14,12 @@ return new class extends Migration
         Schema::create('commandes', function (Blueprint $table) {
             $table->integer('commande_num')->autoIncrement();
             $table->bigInteger('client_num');
-            $table->integer('menu_num');
+            $table->integer('menu_num')->nullable();
             $table->timestamps();
 
             $table->foreign('client_num')->references('client_num')->on('clients')->onDelete('cascade');
             $table->foreign('menu_num')->references('menu_num')->on('menus')->onDelete('set null');
+
         });
     }
 

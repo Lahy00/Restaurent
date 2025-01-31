@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('creers', function (Blueprint $table) {
             $table->integer('creer_num')->autoIncrement();
-            $table->integer('menu_num');
+            $table->integer('menu_num')->nullable();
             $table->integer('stock_num');
             $table->float('quantite');
             $table->timestamps();

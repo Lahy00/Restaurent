@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->bigInteger('client_num')->autoIncrement();
-            $table->integer('table_num');
-            $table->integer('serveur_num');
+            $table->integer('table_num')->nullable();
+            $table->integer('serveur_num')->nullable();
             $table->timestamps();
 
             $table->foreign('table_num')->references('table_num')->on('tables')->onDelete('set null');
